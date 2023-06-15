@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontre caronas seguras e convenientes para seus filhos">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <title>Carona Amiga - Reservas</title>
+</head>
+<body>
+   <header class="cabecalho">
+    <img class="logo-cabecalho" src="../img/Logotipo Creche Escola Infantil.png" alt="Logo Carona Amiga">
+    <nav class="navegador">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./quemSomos.html">Quem Somos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cadastros
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./cadastroPassageiro.html">Passageiro</a></li>
+            <li><a class="dropdown-item" href="./cadastroParceiro.html">Parceiro</a></li>
+          </ul>
+                  <li class="nav-item">
+          <a class="nav-link" href="./login.html">Entrar/Login</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </nav>
+   </header> 
+
+   <h1 class="titulo-depoimento">Faça sua reserva!</h1>
+
+<section>
+  <div class="testbox">
+    <form action="/">     
+      
+      <h4>Escolha o destino<span>*</span></h4>
+      <select>
+        <option class="disabled" value="location" disabled selected>*Destino*</option>
+        <option value="1">Escola Videira</option>
+        <option value="2">Colégio Objetivo</option>
+        <option value="3">Colégio Adventista</option>
+        <option value="4">Jhoy School</option>
+        <option value="5">Colégio Minha Casinha</option>
+      </select>
+      <h4>Data<span>*</span></h4>
+      <div class="day-visited">
+        <input type="date" name="data" required/>
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+      <h4>Horário<span>*</span></h4>
+<div class="time-visited">
+        <input type="time" name="timevisited" required/>
+        <i class="fas fa-clock"></i>
+      </div>
+</section>
+
+<section>    
+    <div class="tabela-reserva">
+<table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+      <tr>
+        <th>Motorista</th>
+        <th>Veículo</th>
+        <th>Status</th>
+        <th>Vagas</th>
+        <th>Reserva</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <img
+                src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                alt=""
+                style="width: 45px; height: 45px"
+                class="rounded-circle"
+                />
+            <div class="ms-3">
+              <p class="fw-bold mb-1">John Silva</p>
+              <p class="text-muted mb-0">(11) 96532-5578</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <p class="fw-normal mb-1">Spin</p>
+          <p class="text-muted mb-0">HTG-5233</p>
+        </td>
+        <td>
+            <button type="button" class="btn btn-success">Disponível</button>
+        </td>
+        <td>3</td>
+        <td>
+            <button type="button" class="btn btn-info">Reservar</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <img
+                src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                class="rounded-circle"
+                alt=""
+                style="width: 45px; height: 45px"
+                />
+            <div class="ms-3">
+              <p class="fw-bold mb-1">Paula Torres</p>
+              <p class="text-muted mb-0">(11) 98563-5271</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <p class="fw-normal mb-1">Onix</p>
+          <p class="text-muted mb-0">JYT-9853</p>
+        </td>
+        <td>
+            <button type="button" class="btn btn-warning">Em Viagem</button>
+        </td>
+        <td>1</td>
+        <td>
+            <button type="button" class="btn btn-info">Reservar</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <img
+                src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+                class="rounded-circle"
+                alt=""
+                style="width: 45px; height: 45px"
+                />
+            <div class="ms-3">
+              <p class="fw-bold mb-1">Katia Souza</p>
+              <p class="text-muted mb-0">(11) 94872-1365</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <p class="fw-normal mb-1">Sandero</p>
+          <p class="text-muted mb-0">UGE-1268</p>
+        </td>
+        <td>
+            <button type="button" class="btn btn-danger">Indisponível</button>
+        </td>
+        <td>0</td>
+        <td>
+            <button type="button" class="btn btn-secondary">OFF</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</section>
+
+<footer class="rodape">
+  <img class="rodape-imagem" src="../img/Logotipo Creche Escola Infantil.png">
+  <p class="texto-rodape">&copy; 2023 Carona Amiga</p>
+
+      <a style="color: #3b5998;" href="#!" role="button"
+      ><i class="fab fa-facebook-f fa-lg"></i
+      ></a>
+
+      <a style="color: #55acee;" href="#!" role="button"
+      ><i class="fab fa-twitter fa-lg"></i
+      ></a>
+
+      <a style="color: #ac2bac;" href="#!" role="button"
+      ><i class="fab fa-instagram fa-lg"></i
+      ></a>
+ </footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

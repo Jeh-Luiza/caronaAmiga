@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sarala:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/*INÍCIO INDEX*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;    
+}
+
+body {
+    font-size: 100%;
+    background-image: url(../img/background.png);
+
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;                              
+    justify-content: flex-start;
+    padding: 30px 80px;
+}
+
+.logo-cabecalho {
+    height: 70px;
+}
+
+.navegador {
+    display: flex;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.conteudo-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.titulo-principal {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.texto-principal {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.botao-principal {
+    background-color: #00C2CB;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px #0000;
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    
+}
+
+.imagem-principal {
+    width: 400px;
+}
+
+/*corpo home*/
+
+.corpo-home {
+  padding: 80px;
+}
+
+.texto-corpo {
+  line-height: 25px;
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;    
+  
+}
+
+.img-home {
+  width: 400px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 15px;
+  
+}
+
+/*footer*/
+
+.rodape {
+    padding: 30px;    
+}
+
+.rodape-imagem {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.texto-rodape {
+    text-align: center;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+
+}
+
+/*Início Depoimentos*/
+
+.titulo-depoimento {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  
+}
+
+.depoimentos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.depoimentos .container-depoimento {
+  display:flex;
+  align-self: center;
+  justify-self: center;
+  color: #fff;
+}
+
+.depoimentos .card-depoimento {
+  background-image: linear-gradient(#c850c0, #00C2CB);
+  overflow: hidden;
+  border-radius: 15px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card-depoimento .img-depoimento1 {
+  background-image: url(../img/pessoa1.jpg);
+  background-position: center;
+  background-size: center;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.card-depoimento .img-depoimento2 {
+  background-image: url(../img/pessoa2.jpg);
+  background-position: center;
+  background-size: center;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.card-depoimento .img-depoimento3 {
+  background-image: url(../img/pessoa3.jpg);
+  background-position: center;
+  background-size: center;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.card-depoimento .img-depoimento span {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.card-depoimento .content {
+  padding: 0 20px;
+  overflow: hidden;
+  height: 0;
+  transition: all .5s;
+}
+
+.card-depoimento:hover .content {
+  height: 240px;
+  padding: 0 20px;
+  opacity: 1;
+  transition: translateY(0);
+}
+
+.card-depoimento .content p {
+  margin-bottom: 0;
+}
+
+.card-depoimento .seta {
+  padding: 15px;
+  font-size: 20px;
+}
+
+/*Fim Depoimentos*/
+
+/*FIM INDEX*/
+
+/*Início Reserva*/
+
+.tabela-reserva {
+  margin: 50px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;     
+}
+
+  .testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 3px;
+  }
+  form {
+  margin: 50px;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px #ccc; 
+  }
+  input {
+  width: calc(100% - 10px);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  vertical-align: middle;
+  }
+  input:hover, textarea:hover, select:hover {
+  outline: none;
+  border: 1px solid #095484;
+  }
+  .name input {
+  margin-bottom: 10px;
+  }
+  select {
+  padding: 7px 0;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background: #e6eef7;
+  }
+  option {
+  background: #fff;
+  }
+  select, table {
+  width: 100%;
+  }
+  .day-visited, .time-visited {
+  position: relative;
+  }
+  .day-visited input, .time-visited input {
+  width: calc(100% - 12px);
+  background: #e6eef7;
+  }
+  input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+  input[type="time"]::-webkit-inner-spin-button {
+  margin: 2px 22px 0 0;
+  }
+  .day-visited i, .time-visited i, input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 8px;
+  font-size: 20px;
+  }
+  .day-visited i, .time-visited i {
+  right: 5px;
+  z-index: 1;
+  color: #a9a9a9;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+  }
+  .question-answer label {
+  display: block;
+  padding: 0 20px 10px 0;
+  }
+  .question-answer input {
+  width: auto;
+  margin-top: -2px;
+  }
+  th, td {
+  width: 18%;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  vertical-align: unset;
+  line-height: 18px;
+  font-weight: 400;
+  word-break: break-all;
+  }
+  .first-col {
+  width: 25%;
+  text-align: left;
+  }
+  textarea {
+  width: calc(100% - 6px);
+  }
+  .btn-block {
+  margin-top: 20px;
+  text-align: center;
+  }
+  button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  -webkit-border-radius: 5px; 
+-moz-border-radius: 5px; 
+  border-radius: 5px; 
+  background-color: #095484;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  }
+  button:hover {
+  background-color: #0666a3;
+  }
+  @media (min-width: 568px) {
+  .name {
+  display: flex;
+  justify-content: space-between;
+  }
+  .name input {
+  width: 47%;
+  margin-bottom: 0;
+  }
+  th, td {
+  word-break: keep-all;
+  }
+  }
+
+  /*Fim Reserva*/
+
+  /*Início Quem Somos*/
+
+  .conteudo-quemSomos {
+    padding: 80px;
+  }
+
+  .titulo-quemSomos {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400; 
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .conteudo-quemSomos p {
+    line-height: 25px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;    
+    
+  }
+
+
+  .img-qs {
+    width: 400px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 15px;
+    
+  }
